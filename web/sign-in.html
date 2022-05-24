@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/auth.js"></script>
+</head>
+<body>
+<div class="login-wrap">
+    <div class="login-html">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <div class="group">
+                    <label for="signInUsername" class="label">Username</label>
+                    <input id="signInUsername" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="signInPassword" class="label">Пароль</label>
+                    <input id="signInPassword" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Увійти" onclick="singIn()">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <a href="#forgot">Забули пароль?</a>
+                </div>
+            </div>
+            <div class="sign-up-htm">
+                <div class="group">
+                    <label for="signUpUsername" class="label">Username</label>
+                    <input id="signUpUsername" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="signUpPassword" class="label">Пароль</label>
+                    <input id="signUpPassword" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="signUpRepeatedPassword" class="label">Повтоно введіть пароль</label>
+                    <input id="signUpRepeatedPassword" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="signUpFirstName" class="label">Ім'я</label>
+                    <input id="signUpFirstName" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="signUpMiddleName" class="label">По батькові</label>
+                    <input id="signUpMiddleName" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="signUpLastName" class="label">Прізвище</label>
+                    <input id="signUpLastName" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="signUpEmail" class="label">Email</label>
+                    <input id="signUpEmail" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="signUpPhone" class="label">Телефон</label>
+                    <input id="signUpPhone" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="signUpInfo" class="label">Коротко про себе</label>
+                    <textarea id="signUpInfo" class="input"></textarea>
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign Up" onclick="singUp()">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <label for="tab-1">Уже зареєстровані?</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

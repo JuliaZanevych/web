@@ -1,0 +1,13 @@
+{
+  "name": "Travel agency",
+  "description": "Laboratory work №2",
+  "version": "1.0.0",
+  "author": "Julia Zanevych",
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint --max-warnings 0 ."
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0"
+  }
+}
