@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background-image: url('../image/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    color: black;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.header p {
+    font-size: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+}
+
+#login-section {
+    display: inline-block;
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+}
+
+#login-section > span {
+    line-height: 50px;
+}
+
+.sign-out {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar #login-section img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #666;
+    color: white;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main a:link {
+    text-decoration: none;
+}
+
+.tour_img {
+    width: 400px;
+    height: 300px;
+}
+
+div.tour_img img {
+    width: 400px;
+    height: 300px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+.footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+.footer .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.footer p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+    content: none;
+}
+
+.footer .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all .25s;
+}
+
+.footer .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.footer p.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-right a img{
+    height: 30px;
+    width: 30px;
+}
+
+
+@media (max-width: 600px) {
+    .footer .footer-left, .footer .footer-right {
+        text-align: center;
+    }
+
+    .footer .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .footer .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,37 @@
+<nb-layout>
+  <nb-layout-column>
+    <nb-card class="m-3">
+      <nb-card-body>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            Please enter your username :
+            <input
+              type="text"
+              [(ngModel)]="username"
+              nbInput
+              placeholder="username"
+              [disabled]="isReady"
+            />
+            <button
+              (click)="chat()"
+              [disabled]="isReady || username == ''"
+              class="ml-4 mb-1"
+              nbButton
+              status="primary"
+            >
+              Start
+            </button>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <!-- Display the chat component and pass the username, theme, and avatar as input for the chat session -->
+    <app-chat
+      *ngIf="isReady"
+      [username]="username"
+      [theme]="selectedTheme"
+      [avatar]="selectedAvatar"
+    ></app-chat>
+  </nb-layout-column>
+</nb-layout>
